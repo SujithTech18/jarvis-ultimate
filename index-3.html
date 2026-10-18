@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#030811">
+<meta name="description" content="JARVIS ULTIMATE — a futuristic browser-based assistant interface for compatible Android browsers.">
+<title>JARVIS ULTIMATE | Android Assistant</title>
+<style>
+:root{--bg:#030811;--panel:#071522;--cyan:#00eaff;--blue:#087ca5;--text:#eafaff;--muted:#9bb6c5;--line:rgba(0,234,255,.24)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#082b40 0%,var(--bg) 52%);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{width:min(1080px,92%);margin:auto}
+header{padding:20px 0;border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{font-weight:800;letter-spacing:.16em;color:var(--cyan)}
+.tag{font-size:.78rem;color:var(--muted);letter-spacing:.12em}
+.hero{padding:76px 0 58px;text-align:center}
+.eyebrow{color:var(--cyan);letter-spacing:.22em;font-size:.78rem;font-weight:700}
+h1{font-size:clamp(2.3rem,8vw,5rem);line-height:1.05;letter-spacing:.07em;margin:14px 0;text-shadow:0 0 24px rgba(0,234,255,.24)}
+h1 span{color:var(--cyan)}
+.lead{max-width:650px;margin:18px auto;color:var(--muted);font-size:1.08rem}
+.hud{width:min(250px,65vw);aspect-ratio:1;margin:30px auto;display:grid;place-items:center;position:relative;border:1px solid var(--cyan);border-radius:50%;box-shadow:0 0 25px rgba(0,234,255,.12),inset 0 0 25px rgba(0,234,255,.08)}
+.hud:before,.hud:after{content:"";position:absolute;border:1px dashed rgba(0,234,255,.55);border-radius:50%}
+.hud:before{inset:14px}.hud:after{inset:32px;border-style:solid;border-color:transparent var(--cyan) transparent var(--cyan)}
+.core{width:72px;height:72px;border:2px solid var(--cyan);transform:rotate(45deg);box-shadow:0 0 24px rgba(0,234,255,.4);display:grid;place-items:center}
+.core:after{content:"";width:28px;height:28px;background:var(--cyan);clip-path:polygon(50% 0,100% 100%,0 100%);opacity:.85}
+.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-block;text-decoration:none;border:1px solid var(--cyan);padding:12px 20px;border-radius:5px;font-weight:700;letter-spacing:.04em}
+.btn.primary{background:var(--cyan);color:#001018}
+.btn.secondary{color:var(--cyan);background:transparent}
+.note{font-size:.85rem;color:var(--muted);max-width:650px;margin:16px auto 0}
+section{padding:42px 0}
+.section-title{text-align:center;font-size:1.8rem;margin:0 0 22px}
+.section-title span{color:var(--cyan)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.card{background:linear-gradient(150deg,rgba(7,21,34,.96),rgba(3,10,19,.96));border:1px solid var(--line);border-radius:10px;padding:20px}
+.icon{font-size:1.45rem;color:var(--cyan)}
+.card h3{margin:8px 0}.card p{margin:0;color:var(--muted);font-size:.94rem}
+.pricebox{max-width:580px;margin:auto;text-align:center;border:1px solid var(--cyan);border-radius:12px;padding:30px;background:rgba(4,19,30,.85);box-shadow:0 0 35px rgba(0,234,255,.08)}
+.price{font-size:3rem;font-weight:800;color:var(--cyan);line-height:1.2;margin:8px}
+ul{padding-left:22px;text-align:left;color:var(--muted)}
+.warning{border-left:3px solid var(--cyan);padding:12px 16px;background:rgba(0,234,255,.05);color:var(--muted);font-size:.92rem;text-align:left;margin-top:18px}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.85rem;text-align:center}
+footer a{color:var(--cyan)}
+@media(max-width:560px){.hero{padding-top:48px}.nav{align-items:flex-start;flex-direction:column}.btn{width:100%;text-align:center}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand">J.A.R.V.I.S.</div><div class="tag">JUST A RATHER VERY INTELLIGENT SYSTEM</div></div></header>
+<main>
+<section class="hero wrap">
+  <div class="eyebrow">PERSONAL ASSISTANT INTERFACE</div>
+  <h1>JARVIS <span>ULTIMATE</span></h1>
+  <p class="lead">A futuristic cyan-blue assistant interface for compatible Android browsers, built with HTML, CSS and JavaScript.</p>
+  <div class="hud" aria-hidden="true"><div class="core"></div></div>
+  <div class="actions">
+    <a class="btn primary" href="#buy">GET JARVIS — ₹199</a>
+    <a class="btn secondary" href="#features">EXPLORE FEATURES</a>
+  </div>
+  <p class="note">Digital HTML product • Android browser required • No native app installation included</p>
+</section>
+<section id="features"><div class="wrap">
+  <h2 class="section-title">SYSTEM <span>FEATURES</span></h2>
+  <div class="grid">
+    <article class="card"><div class="icon">◉</div><h3>Voice Commands</h3><p>Voice interaction while the page is active, subject to browser support and microphone permission.</p></article>
+    <article class="card"><div class="icon">＋ − × ÷</div><h3>Smart Calculator</h3><p>Built-in calculator for everyday calculations.</p></article>
+    <article class="card"><div class="icon">◷</div><h3>Timer & Reminders</h3><p>Convenient timer tools within the browser page. Background behavior can vary by device.</p></article>
+    <article class="card"><div class="icon">▤</div><h3>Study Timetable</h3><p>A study-planning interface to help organize your daily routine.</p></article>
+    <article class="card"><div class="icon">↗</div><h3>App Shortcuts</h3><p>Shortcuts may open supported apps or web destinations; not every installed app is supported.</p></article>
+    <article class="card"><div class="icon">⌁</div><h3>Futuristic HUD</h3><p>Dark interface with cyan-blue visual styling inspired by sci-fi assistant dashboards.</p></article>
+  </div>
+</div></section>
+<section id="buy"><div class="wrap">
+  <div class="pricebox">
+    <div class="eyebrow">DIGITAL EDITION</div>
+    <h2>JARVIS ULTIMATE</h2>
+    <div class="price">₹199</div>
+    <p class="lead">One-time listed price for the downloadable HTML project.</p>
+    <ul>
+      <li>JARVIS HTML app file</li>
+      <li>Android installation instructions</li>
+      <li>Feature and compatibility notes</li>
+    </ul>
+    <!-- IMPORTANT: Replace the # in the link below with your real checkout or product-delivery URL before publishing. -->
+    <a class="btn primary" href="#contact" id="buyButton">PURCHASE — ₹199</a>
+    <div class="warning"><strong>Compatibility notice:</strong> This is a browser-based HTML project, not a native Android application. Voice recognition, app shortcuts, timers, and other features depend on your device and browser. It does not guarantee wake-word detection while the phone is locked or the page is in the background.</div>
+    <p class="note">Do not accept payment until you have connected and tested a genuine checkout and file-delivery method.</p>
+  </div>
+</div></section>
+<section id="contact"><div class="wrap">
+  <h2 class="section-title">SUPPORT & <span>TERMS</span></h2>
+  <div class="grid">
+    <article class="card"><h3>Before you buy</h3><p>Review the feature list, device requirements, delivery method, refund terms and support arrangements before paying.</p></article>
+    <article class="card"><h3>Licence</h3><p>Set clear usage terms. Do not claim ownership of third-party names, logos or services. Only sell code and assets you have the right to distribute.</p></article>
+    <article class="card"><h3>Contact</h3><p>Replace this text with a dedicated support email or contact page before publishing. Do not expose your personal phone number unnecessarily.</p></article>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">JARVIS ULTIMATE • Independent browser-based project. Not affiliated with Marvel, Iron Man, Google, or Android. Product details and compatibility should be verified before sale.</div></footer>
+<script>
+document.getElementById('buyButton').addEventListener('click', function(event){
+  event.preventDefault();
+  alert('Checkout is not connected yet. Add your real payment and secure file-delivery link before accepting orders.');
+});
+</script>
+</body>
+</html>
